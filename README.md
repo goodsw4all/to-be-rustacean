@@ -15,7 +15,7 @@
 # Learning Rust as a embedded C programmer  
 
 ## Intro
-> My journey to be a Rustacean   
+> My journey to be a Rustacean 🦀    
 > <img src="https://rustacean.net/assets/rustacean-flat-happy.svg" width="50" height="50"/>
 > <img src="https://foundation.rust-lang.org/img/rust-logo-blk.svg" width="50" height="50"/>
 > <img src="https://rustacean.net/assets/cuddlyferris.svg" width="50" height="50"/>
@@ -74,53 +74,45 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 
 ## Learning
 ### Step 1 : Rust fundamental (systax & idioms)
-- The book 한글버젼 : https://rinthel.github.io/rust-lang-book-ko/
-- Easy Rust : Rust를 배웁시다. (Kor/Eng) by David MacLeod  
+- [ ] The book 한글버젼 : https://rinthel.github.io/rust-lang-book-ko/
+- [ ] Easy Rust : Rust를 배웁시다. (Kor/Eng) by David MacLeod  
 한국말을 그냥 잘 하는 수준이 아니기 때문에, 외국인이지만 한국어로 강의하는 것이 전혀 문제 없다.
-[https://dhghomon.github.io/easy_rust/](https://dhghomon.github.io/easy_rust/)
-[Easy Rust Korean / 한국어판](https://www.notion.so/d0f614ab40194dfcac980bc6632d4eaf)
+[https://dhghomon.github.io/easy_rust/](https://dhghomon.github.io/easy_rust/)  
+[Easy Rust Korean / 한국어판](https://www.notion.so/d0f614ab40194dfcac980bc6632d4eaf)  
 
 ### Step 2 : Coding Practice
-
-muscle memory building(acturally it doensnt have memory though)
+muscle memory building(acturally it doensnt have memory though)  
 어느 정도 코딩할 수 있을 정도 지식이 생기면, 코딩 하면서 부족한 부분을 명확히 인지하게 되고 그 부분을 관련 자료 찾아 공부
 
-Rustlings : 조금 쉬운 편
+- [ ] Rustlings : 조금 쉬운 편
 [https://github.com/rust-lang/rustlings](https://github.com/rust-lang/rustlings)
 
-**Exercism** : Online learning how to coding platform (코딩 인터뷰용이라기 보단, 교육적 목적 for free)  
+- [ ] **Exercism** : Online learning how to coding platform (코딩 인터뷰용이라기 보단, 교육적 목적 for free)  
 [https://exercism.org/tracks/rust](https://exercism.org/tracks/rust)  
 Solve coding exercises and get mentored to gain true fluency in your chosen programming languages.
-
 WORK LOCALLY 로 VS Code 등 IDE를 도움을 받아 코딩하는 것이 좋고,
 Test Case를 통해 힌트를 얻고 test 작성법을 배울 수 있다.
-
-갈 길이 아직 많이 남았다
 
 ![Untitled](images/Untitled%201.png)
 
 ### Step 3 : 원서로 공부하기
-   영어로 책을 end to end로 읽으면서 공부하는 것이 쉬운 것은 아니지만, 잘 할 수 있어야 하고, 아주 느리게 나아지고 있다.  
-   프로그래머에게 영어는 프로그래밍 언어 만큼 중요하다.
+   영어로 책을 end to end로 읽으면서 공부하는 것이 쉬운 것은 아니지만, 우리말 자료가 별로 없기 때문에 선택의 여지가 없다.  
+   대부분의 정보는 영어로 되어 있기 때문에 프로그래머에게 영어는 프로그래밍 언어 만큼 중요하다는 것을 다시금 깨닫는다.
 
 #### Step 3-1 : Command Line Applications in Rust
-https://rust-cli.github.io/book/index.html
+- [ ] https://rust-cli.github.io/book/index.html
 
 #### Step 3-2 : Zero 2 Production in RUST
-https://www.zero2prod.com/index.html?country=Korea&discount_code=SEA60
+- [ ] https://www.zero2prod.com/index.html?country=Korea&discount_code=SEA60
 책 선택 이유
-- backend에 관심이 생겼고 적합한 책을 찾던 중 이 책이 Project-base로 디자인 되어있었다. (몇 가지 project base 책들이 있음),
-- 최근에 Update 되었고, 책을 쓴 이유 중 하나가 새로 오는 팀원들을 위해 썼다고 한다.
-  그래서, 초보 베이스 책은 아니지만, 세심하게 배려했다고 서문과 리뷰에 언급되어 있어 안심하고 구매(했지만, 어렵다.)
+* backend에 관심이 생겼고 적합한 책을 찾던 중 이 책이 Project-base로 디자인 되어있었다. 
+* 최근에 Update 되었고, 책을 쓴 이유 중 하나가 새로 오는 팀원들을 위해 썼다고 한다.
+  그래서, 초보용 책은 아니지만, 세심하게 배려했다고 서문과 리뷰에 언급되어 있어 안심하고 구매(했지만, 어렵다.)
 
-![Untitled](images/Untitled%202.png)
-
-![Untitled](images/Untitled%203.png)
-
-좀 어렵게 느껴지지만, 이미 시작한 이상 끝은 봐야지.
-
-![Untitled](images/Untitled%204.png)
-
+<p float="left">
+  <img src="images/Untitled%202.png" width="600" /> <br>
+  <img src="images/Untitled%203.png" width="600" /> 
+</p>
 
 ### Step 4 : Learning by doing some projects
 useful, big idea, start small
