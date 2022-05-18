@@ -76,9 +76,9 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 ### Step 1 : Rust fundamental (systax & idioms)
 - [ ] The book 한글버젼 : https://rinthel.github.io/rust-lang-book-ko/
 - [ ] Easy Rust : Rust를 배웁시다. (Kor/Eng) by David MacLeod  
-한국말을 그냥 잘 하는 수준이 아니기 때문에, 외국인이지만 한국어로 강의하는 것이 전혀 문제 없다.
-[https://dhghomon.github.io/easy_rust/](https://dhghomon.github.io/easy_rust/)  
-[Easy Rust Korean / 한국어판](https://www.notion.so/d0f614ab40194dfcac980bc6632d4eaf)  
+한국말을 그냥 잘 하는 수준이 아니기 때문에, 외국인이지만 한국어로 강의하는 것이 전혀 문제 없다.  
+[Easy Rust Korean / 한국어판 강의](https://www.youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE)  
+[Easy Rust Book](https://dhghomon.github.io/easy_rust/)  
 
 ### Step 2 : Coding Practice
 muscle memory building(acturally it doensnt have memory though)  
@@ -121,6 +121,7 @@ useful, big idea, start small
    - Linux Kernel Module
    - GPIO control
 - CLI app
+   - 
 - solana Dapp
 - WASM
 - 공공 Data 를 활용해서 API server 를 만들기
