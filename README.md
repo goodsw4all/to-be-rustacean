@@ -1,18 +1,15 @@
-
-  [Learning Rust as a embedded C programmer](#learning-rust-as-a-embedded-c-programmer)
+# Learning Rust as a embedded C programmer  
   - [Intro](#intro)
     - [Good reasons for C Programmers](#good-reasons-for-c-programmers)
     - [Challenges](#challenges)
   - [Learning](#learning)
     - [Step 1 : Rust fundamental (systax & idioms)](#step-1--rust-fundamental-systax--idioms)
     - [Step 2 : Coding Practice](#step-2--coding-practice)
-    - [Step 3 : Rust books written in English](#step-3--Rust-books-written-in-0English)
+    - [Step 3 : Rust books written in English](#step-3--rust-books-written-in-english)
       - [Step 3-1 : Command Line Applications in Rust](#step-3-1--command-line-applications-in-rust)
       - [Step 3-2 : Zero 2 Production in RUST](#step-3-2--zero-2-production-in-rust)
     - [Step 4 : Learning by doing some projects](#step-4--learning-by-doing-some-projects)
   - [References](#references)
-
-# Learning Rust as a embedded C programmer  
 
 ## Intro
 > My journey to be a Rustacean 🦀    
@@ -27,7 +24,7 @@ embedded system 에서는 system building 과 firmware coding 이 7:3 정도 였
  
 unlearn 하고 learn 하는 과정이 쉽지 않겠지만, 실패하더라도 시도해 보는 수 밖에 없다.   
 
-이왕 잘 하던것만 붙잡고 있을 것이 아니라면, 사용해본적이 없는 완전히 미지의 언어를 사용하고 싶었다.  
+이왕 손에 익은 것만 붙잡고 있을 것이 아니므로, 사용해본적이 없는 완전히 미지의 언어를 사용하고 싶었다.  
 C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있는데, *Rust*가 그 Solution 인 듯하다   
 익숙했던 device들과 씨름하는 개발을 넘어, 넓고 넓은 바깥 세계의 개발로 나가는 여정이라 험난 할 듯하다.  
  
@@ -92,8 +89,9 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 muscle memory building(acturally it doensnt have memory though)  
 어느 정도 코딩할 수 있을 정도 지식이 생기면, 코딩 하면서 부족한 부분을 명확히 인지하게 되고 그 부분을 관련 자료 찾아 공부
 
-- [ ] Rustlings : 조금 쉬운 편
+- [X] Rustlings : 조금 쉬운 편
 [https://github.com/rust-lang/rustlings](https://github.com/rust-lang/rustlings)
+![Rustlings Completed](images/rustlings.png)
 
 - [ ] **Exercism** : Online learning how to coding platform (코딩 인터뷰용이라기 보단, 교육적 목적 for free)  
 [https://exercism.org/tracks/rust](https://exercism.org/tracks/rust)  
@@ -101,11 +99,11 @@ Solve coding exercises and get mentored to gain true fluency in your chosen prog
 Web에서 문제를 풀어볼 수 있지만, WORK LOCALLY 방식으로 IDE의 도움받아서 코딩하는 것이 좋고,
 Test Case를 통해 힌트를 얻고 test 작성법을 배울 수 있다.
 
-![Exercsim Status](images/Untitled%201.png)
+![Exercsim Status](images/Untitled%201.png =10x)
 
 ### Step 3 : Rust books written in English
-   영어로 책을 end to end로 읽으면서 공부하는 것이 쉬운 것은 아니지만, 우리말 자료가 별로 없기 때문에 선택의 여지가 없다.  
-   대부분의 정보는 영어로 되어 있어 영어는 프로그래밍 언어 만큼 중요하다는 것을 때때로 까먹고 깨닫고 그런다.
+   원서를 end to end로 읽으면서 공부하는 것이 시간과 노력이 더 들겠지만, 우리말 자료가 별로 없기 때문에 선택의 여지가 없다.  
+   영어가 프로그래밍 언어 이상으로 중요하다는 것을 때때로 까먹고 다시 깨닫고 그런다.
 
 #### Step 3-1 : Command Line Applications in Rust
 - [ ] https://rust-cli.github.io/book/index.html
