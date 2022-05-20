@@ -71,7 +71,7 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 
 ## Learning
 ### Step 1 : Rust fundamental (systax & idioms)
-- [x] The book 한글버젼  (https://rinthel.github.io/rust-lang-book-ko/)  22.05.19  
+- [x] The book 한글버젼  (https://rinthel.github.io/rust-lang-book-ko/) (22.05.19)  
   - 한줄 후기 : 챕터별로 가독성이 많이 다르다. 이 책 자체가 초심자를 위한 책은 아니고 어려움  
   - 원문으로 복습할 필요가 있는 챕터들   
      - [ ] 10. Generic Types, Traits, and Lifetimes  
@@ -89,7 +89,7 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 muscle memory building(acturally it doensnt have memory though)  
 어느 정도 코딩할 수 있을 정도 지식이 생기면, 코딩 하면서 부족한 부분을 명확히 인지하게 되고 그 부분을 관련 자료 찾아 공부
 
-- [X] Rustlings : 조금 쉬운 편
+- [X] Rustlings : 조금 쉬운 편 (22.05.20)
 [https://github.com/rust-lang/rustlings](https://github.com/rust-lang/rustlings)
 ![Rustlings Completed](images/rustlings.png)
 
