@@ -71,14 +71,16 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 
 ## Learning
 ### Step 1 : Rust fundamental (systax & idioms)
-- [x] The book 한글버젼  (https://rinthel.github.io/rust-lang-book-ko/) (22.05.19)  
-  - 한줄 후기 : 챕터별로 가독성이 많이 다르다. 이 책 자체가 초심자를 위한 책은 아니고 어려움  
-  - 원문으로 복습할 필요가 있는 챕터들   
-     - [ ] 10. Generic Types, Traits, and Lifetimes  
-     - [ ] 15. Smart Pointers  
-     - [ ] 16. Fearless Concurrency  
-     - [ ] 17. Object Oriented Programming Features of Rust  
-     - [ ] 20. Final Project: Building a Multithreaded Web Server  
+- [ ] The book 한글 번역 버젼  (https://rinthel.github.io/rust-lang-book-ko/)  
+  - [x] 읽기 : 챕터별로 가독성이 많이 다르다. 이 책 자체가 초심자를 위한 책은 아니고 어려움 (22.05.19)   
+  - [ ] 원문으로 복습할 필요가 있는 챕터들   
+    - Ch 10. Generic Types, Traits, and Lifetimes  
+    - Ch 15. Smart Pointers  
+    - Ch 16. Fearless Concurrency  
+    - Ch 17. Object Oriented Programming Features of Rust  
+    - Ch 20. Final Project: Building a Multithreaded Web Server  
+  - [ ] Remembering Rust "the Book" with Anki   
+         암기용 Flashcards (https://www.argpar.se/posts/programming/remembering-rust-with-anki)
 
 - [ ] Easy Rust : Rust를 배웁시다. (Kor/Eng) by David MacLeod  
 한국말을 그냥 잘 하는 수준이 아니기 때문에, 외국인이지만 한국어로 강의하는 것이 전혀 문제 없다.  
@@ -99,7 +101,7 @@ Solve coding exercises and get mentored to gain true fluency in your chosen prog
 Web에서 문제를 풀어볼 수 있지만, WORK LOCALLY 방식으로 IDE의 도움받아서 코딩하는 것이 좋고,
 Test Case를 통해 힌트를 얻고 test 작성법을 배울 수 있다.
 
-![Exercsim Status](images/Untitled%201.png =10x)
+![Exercsim Status](images/Untitled%201.png)
 
 ### Step 3 : Rust books written in English
    원서를 end to end로 읽으면서 공부하는 것이 시간과 노력이 더 들겠지만, 우리말 자료가 별로 없기 때문에 선택의 여지가 없다.  
@@ -131,6 +133,8 @@ useful, big idea, start small
 - solana Dapp
 - WASM
 - 공공 Data 를 활용해서 API server 를 만들기
+
+## My own q/a
 
 ## References
 
