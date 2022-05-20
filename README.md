@@ -6,7 +6,7 @@
   - [Learning](#learning)
     - [Step 1 : Rust fundamental (systax & idioms)](#step-1--rust-fundamental-systax--idioms)
     - [Step 2 : Coding Practice](#step-2--coding-practice)
-    - [Step 3 : 원서로 공부하기](#step-3--원서로-공부하기)
+    - [Step 3 : Rust books written in English](#step-3--Rust-books-written-in-0English)
       - [Step 3-1 : Command Line Applications in Rust](#step-3-1--command-line-applications-in-rust)
       - [Step 3-2 : Zero 2 Production in RUST](#step-3-2--zero-2-production-in-rust)
     - [Step 4 : Learning by doing some projects](#step-4--learning-by-doing-some-projects)
@@ -74,7 +74,15 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 
 ## Learning
 ### Step 1 : Rust fundamental (systax & idioms)
-- [ ] The book 한글버젼 : https://rinthel.github.io/rust-lang-book-ko/
+- [x] The book 한글버젼  (https://rinthel.github.io/rust-lang-book-ko/)  22.05.19  
+  - 한줄 후기 : 챕터별로 가독성이 많이 다르다. 이 책 자체가 초심자를 위한 책은 아니고 어려움  
+  - 원문으로 복습할 필요가 있는 챕터들   
+     - [ ] 10. Generic Types, Traits, and Lifetimes  
+     - [ ] 15. Smart Pointers  
+     - [ ] 16. Fearless Concurrency  
+     - [ ] 17. Object Oriented Programming Features of Rust  
+     - [ ] 20. Final Project: Building a Multithreaded Web Server  
+
 - [ ] Easy Rust : Rust를 배웁시다. (Kor/Eng) by David MacLeod  
 한국말을 그냥 잘 하는 수준이 아니기 때문에, 외국인이지만 한국어로 강의하는 것이 전혀 문제 없다.  
 [Easy Rust Korean / 한국어판 강의](https://www.youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE)  
@@ -89,15 +97,15 @@ muscle memory building(acturally it doensnt have memory though)
 
 - [ ] **Exercism** : Online learning how to coding platform (코딩 인터뷰용이라기 보단, 교육적 목적 for free)  
 [https://exercism.org/tracks/rust](https://exercism.org/tracks/rust)  
-Solve coding exercises and get mentored to gain true fluency in your chosen programming languages.
-WORK LOCALLY 로 VS Code 등 IDE를 도움을 받아 코딩하는 것이 좋고,
+Solve coding exercises and get mentored to gain true fluency in your chosen programming languages.  
+Web에서 문제를 풀어볼 수 있지만, WORK LOCALLY 방식으로 IDE의 도움받아서 코딩하는 것이 좋고,
 Test Case를 통해 힌트를 얻고 test 작성법을 배울 수 있다.
 
-![Untitled](images/Untitled%201.png)
+![Exercsim Status](images/Untitled%201.png)
 
-### Step 3 : 원서로 공부하기
+### Step 3 : Rust books written in English
    영어로 책을 end to end로 읽으면서 공부하는 것이 쉬운 것은 아니지만, 우리말 자료가 별로 없기 때문에 선택의 여지가 없다.  
-   대부분의 정보는 영어로 되어 있기 때문에 프로그래머에게 영어는 프로그래밍 언어 만큼 중요하다는 것을 다시금 깨닫는다.
+   대부분의 정보는 영어로 되어 있어 영어는 프로그래밍 언어 만큼 중요하다는 것을 때때로 까먹고 깨닫고 그런다.
 
 #### Step 3-1 : Command Line Applications in Rust
 - [ ] https://rust-cli.github.io/book/index.html
