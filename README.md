@@ -3,7 +3,7 @@
     - [Good reasons for C Programmers](#good-reasons-for-c-programmers)
     - [Challenges](#challenges)
   - [Learning](#learning)
-    - [Step 1 : Rust fundamental (systax & idioms)](#step-1--rust-fundamental-systax--idioms)
+    - [Step 1 : Rust fundamental (syntax & idioms)](#step-1--rust-fundamental-systax--idioms)
     - [Step 2 : Coding Practice](#step-2--coding-practice)
     - [Step 3 : Rust books written in English](#step-3--rust-books-written-in-english)
       - [Step 3-1 : Command Line Applications in Rust](#step-3-1--command-line-applications-in-rust)
@@ -70,7 +70,7 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 - closure
 
 ## Learning
-### Step 1 : Rust fundamental (systax & idioms)
+### Step 1 : Rust fundamental (syntax & idioms)
 - [ ] The book 한글 번역 버젼  (https://rinthel.github.io/rust-lang-book-ko/)  
   - [x] 읽기 : 챕터별로 가독성이 많이 다르다. 이 책 자체가 초심자를 위한 책은 아니고 어려움 (22.05.19)   
   - [ ] 원문으로 복습할 필요가 있는 챕터들   
@@ -111,7 +111,7 @@ Test Case를 통해 힌트를 얻고 test 작성법을 배울 수 있다.
 - [ ] https://www.oreilly.com/library/view/command-line-rust/9781098109424/
 
 #### Step 3-2 : Zero 2 Production in RUST
-- [ ] https://www.zero2prod.com/index.html?country=Korea&discount_code=SEA60
+- [ ] https://www.zero2prod.com/index.html?country=Korea&discount_code=SEA60  
 책 선택 이유
 * backend에 관심이 생겼고 적합한 책을 찾던 중 이 책이 Project-base로 디자인 되어있었다. 
 * 최근에 Update 되었고, 책을 쓴 이유 중 하나가 새로 오는 팀원들을 위해 썼다고 한다.
