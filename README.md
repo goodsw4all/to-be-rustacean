@@ -107,8 +107,8 @@ Test Case를 통해 힌트를 얻고 test 작성법을 배울 수 있다.
    원서를 end to end로 읽으면서 공부하는 것이 시간과 노력이 더 들겠지만, 우리말 자료가 별로 없기 때문에 선택의 여지가 없다.  
    영어가 프로그래밍 언어 이상으로 중요하다는 것을 때때로 까먹고 다시 깨닫고 그런다.
 
-#### Step 3-1 : Command Line Applications in Rust
-- [ ] https://rust-cli.github.io/book/index.html
+#### Step 3-1 : Command-Line Rust
+- [ ] https://www.oreilly.com/library/view/command-line-rust/9781098109424/
 
 #### Step 3-2 : Zero 2 Production in RUST
 - [ ] https://www.zero2prod.com/index.html?country=Korea&discount_code=SEA60
