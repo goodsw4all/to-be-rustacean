@@ -3,14 +3,14 @@
     - [Good reasons for C Programmers](#good-reasons-for-c-programmers)
     - [Challenges](#challenges)
   - [Learning](#learning)
-    - [Step 1 : Rust fundamental (syntax & idioms)](#step-1--rust-fundamental-systax--idioms)
+    - [Step 1 : Rust fundamental (syntax & idioms)](#step-1--rust-fundamental-syntax--idioms)
     - [Step 2 : Coding Practice](#step-2--coding-practice)
     - [Step 3 : Rust books written in English](#step-3--rust-books-written-in-english)
-      - [Step 3-1 : Command Line Applications in Rust](#step-3-1--command-line-applications-in-rust)
+      - [Step 3-1 : Command-Line Rust](#step-3-1--command-line-rust)
       - [Step 3-2 : Zero 2 Production in RUST](#step-3-2--zero-2-production-in-rust)
     - [Step 4 : Learning by doing some projects](#step-4--learning-by-doing-some-projects)
+  - [My own q/a](#my-own-qa)
   - [References](#references)
-
 ## Intro
 > My journey to be a Rustacean 🦀    
 > <img src="https://rustacean.net/assets/rustacean-flat-happy.svg" width="50" height="50"/>
