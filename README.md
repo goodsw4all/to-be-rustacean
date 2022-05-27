@@ -89,6 +89,7 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 한국말을 그냥 잘 하는 수준이 아니기 때문에, 외국인이지만 한국어로 강의하는 것이 전혀 문제 없다.  
 [Easy Rust Korean / 한국어판 강의](https://www.youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE)  
 [Easy Rust Book](https://dhghomon.github.io/easy_rust/)  
+  강의 목차 [TOC of Easy Rust](/toc_easyrust_playlist)
 
 ### Step 2 : Coding Practice
 muscle memory building(acturally it doensnt have memory though)  
@@ -104,7 +105,7 @@ Solve coding exercises and get mentored to gain true fluency in your chosen prog
 Web에서 문제를 풀어볼 수 있지만, WORK LOCALLY 방식으로 IDE의 도움받아서 코딩하는 것이 좋고,
 Test Case를 통해 힌트를 얻고 test 작성법을 배울 수 있다.
 
-![Exercsim Status](images/Untitled%201.png)
+  ![Exercsim Status](images/exercism.png)
 
 ### Step 3 : Rust books written in English
    원서를 end to end로 읽으면서 공부하는 것이 시간과 노력이 더 들겠지만, 우리말 자료가 별로 없기 때문에 선택의 여지가 없다.  
@@ -114,7 +115,8 @@ Test Case를 통해 힌트를 얻고 test 작성법을 배울 수 있다.
 - [ ] https://www.oreilly.com/library/view/command-line-rust/9781098109424/
 
 #### Step 3-2 : Zero 2 Production in RUST
-- [ ] https://www.zero2prod.com/index.html?country=Korea&discount_code=SEA60  
+- [ ] [Auth Web Microservice with rust using Actix-Web 4.0](https://gill.net.in/posts/auth-microservice-rust-actix-web1.0-diesel-complete-tutorial/)
+- [ ] [Book : Zero To Production](https://www.zero2prod.com/index.html?country=Korea&discount_code=SEA60)  
 책 선택 이유
 * backend에 관심이 생겼고 적합한 책을 찾던 중 이 책이 Project-base로 디자인 되어있었다. 
 * 최근에 Update 되었고, 책을 쓴 이유 중 하나가 새로 오는 팀원들을 위해 썼다고 한다.
