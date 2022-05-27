@@ -79,8 +79,11 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
     - Ch 16. Fearless Concurrency  
     - Ch 17. Object Oriented Programming Features of Rust  
     - Ch 20. Final Project: Building a Multithreaded Web Server  
-  - [ ] Remembering Rust "the Book" with Anki   
-         암기용 Flashcards (https://www.argpar.se/posts/programming/remembering-rust-with-anki)
+  - [ ] Remembering Rust "the Book" with Anki Deck
+        https://www.argpar.se/posts/programming/remembering-rust-with-anki
+  - [ ] Cheat sheet
+        https://github.com/donbright/rust-lang-cheat-sheet         
+        
 
 - [ ] Easy Rust : Rust를 배웁시다. (Kor/Eng) by David MacLeod  
 한국말을 그냥 잘 하는 수준이 아니기 때문에, 외국인이지만 한국어로 강의하는 것이 전혀 문제 없다.  
