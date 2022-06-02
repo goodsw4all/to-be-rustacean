@@ -134,10 +134,10 @@ useful, big idea, start small
    - Linux Kernel Module
    - GPIO control
 - CLI app
-   - 
+   - Stock Trading (한국투자증권 KIS API)
 - solana Dapp
 - WASM
-- 공공 Data 를 활용해서 API server 를 만들기
+- 공공 Data API 를 활용해서 sth?
 
 ## My own q/a
 
