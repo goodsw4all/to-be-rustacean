@@ -130,9 +130,8 @@ Test Case를 통해 힌트를 얻고 test 작성법을 배울 수 있다.
 ### Step 4 : Learning by doing some projects
 useful, big idea, start small
 만들자 무언가 (생각나는 대로 적어 보고, 점차 구체화 할 것)
-- Rpi4 Project
-   - Linux Kernel Module
-   - GPIO control
+- Linux Kernel Module
+   - C -> Rust
 - CLI app
    - Stock Trading (한국투자증권 KIS API)
 - solana Dapp
@@ -142,7 +141,5 @@ useful, big idea, start small
 ## My own q/a
 
 ## References
-
-![Untitled](images/Untitled%205.png)
 
 ![Untitled](images/Untitled%206.png)
