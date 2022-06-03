@@ -19,7 +19,7 @@
 
 어느날 문득 고인물 개발자가 되었다는 것을 깨닫게 되고, 일하며 살아왔던 시간들을 회고해 보니     
 꽤 오랜 동안 나름 고군분투 했지만, 내가 원하는 수준의 개발자가 된 것은 아니었다.  
-embedded system 에서는 system building 과 firmware coding 이 7:3 정도 였던 것 같다.  
+embedded system 에서는 system building 과 firmware coding 이 5:5 정도 였던 것 같다.  
 앞으로는 소프트웨어 개발에 몰입하고 싶다. 
  
 unlearn 하고 learn 하는 과정이 쉽지 않겠지만, 실패하더라도 시도해 보는 수 밖에 없다.   
@@ -117,7 +117,6 @@ Test Case를 통해 힌트를 얻고 test 작성법을 배울 수 있다.
 #### Step 3-2 : Zero 2 Production in RUST
 - [ ] [Auth Web Microservice with rust using Actix-Web 4.0](https://gill.net.in/posts/auth-microservice-rust-actix-web1.0-diesel-complete-tutorial/)
 - [ ] [Book : Zero To Production](https://www.zero2prod.com/index.html?country=Korea&discount_code=SEA60)  
-책 선택 이유
 * backend에 관심이 생겼고 적합한 책을 찾던 중 이 책이 Project-base로 디자인 되어있었다. 
 * 최근에 Update 되었고, 책을 쓴 이유 중 하나가 새로 오는 팀원들을 위해 썼다고 한다.
   그래서, 초보용 책은 아니지만, 세심하게 배려했다고 서문과 리뷰에 언급되어 있어 안심하고 구매(했지만, 어렵다.)
