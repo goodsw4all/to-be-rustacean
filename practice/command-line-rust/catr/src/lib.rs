@@ -20,7 +20,7 @@ pub fn get_args() -> MyResult<Config> {
         .arg(
             Arg::new("files")
                 .value_name("FILE")
-                .help("Input fiels")
+                .help("Input files")
                 .allow_invalid_utf8(true)
                 .multiple_values(true)
                 .default_value("-"),
@@ -30,7 +30,7 @@ pub fn get_args() -> MyResult<Config> {
                 .short('n')
                 .long("number")
                 .help("Number the output lines")
-                .takes_value(false),
+                .takes_value(false), // means it's a flag
         )
         .arg(
             Arg::new("number_nonblank_lines")
@@ -82,6 +82,4 @@ pub fn run(config: Config) -> MyResult<()> {
     }
     // dbg!(config);
     Ok(())
-    // Err("Error...".into())
-    // Err("Error...")?
 }
