@@ -132,7 +132,8 @@ useful, big idea, start small
 - Linux Kernel Module
    - C -> Rust
 - CLI app
-   - Stock Trading (한국투자증권 KIS API)
+   - Stock Trading SDK + Trader App (한국투자증권 KIS API)  
+     https://github.com/goodsw4all/KIS_OpenAPI_in_Rust
 - solana Dapp
 - WASM
 - 공공 Data API 를 활용해서 sth?
