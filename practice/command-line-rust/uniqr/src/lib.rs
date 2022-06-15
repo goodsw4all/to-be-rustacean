@@ -56,7 +56,7 @@ fn open(filename: &str) -> MyResult<Box<dyn BufRead>> {
     }
 }
 
-pub fn run(config: Config) -> MyResult<()> {
+pub fn run2(config: Config) -> MyResult<()> {
     //Err(err) => eprintln!("{}: {}", filename, err),
     let mut file = open(&config.in_file).map_err(|e| format!("{}: {}", config.in_file, e))?;
 
@@ -110,51 +110,51 @@ pub fn run(config: Config) -> MyResult<()> {
     Ok(())
 }
 
-// pub fn run(config: Config) -> MyResult<()> {
-//     //Err(err) => eprintln!("{}: {}", filename, err),
-//     let mut file = open(&config.in_file).map_err(|e| format!("{}: {}", config.in_file, e))?;
+pub fn run(config: Config) -> MyResult<()> {
+    //Err(err) => eprintln!("{}: {}", filename, err),
+    let mut file = open(&config.in_file).map_err(|e| format!("{}: {}", config.in_file, e))?;
 
-//     let mut current_line = String::new();
-//     let mut to_print_line = String::new();
-//     let mut count = 0;
+    let mut current_line = String::new();
+    let mut to_print_line = String::new();
+    let mut count = 0;
 
-//     let mut buffer: Box<dyn Write> = match &config.out_file {
-//         Some(out) => Box::new(fs::File::create(out)?),
-//         _ => Box::new(io::stdout()),
-//     };
+    let mut buffer: Box<dyn Write> = match &config.out_file {
+        Some(out) => Box::new(fs::File::create(out)?),
+        _ => Box::new(io::stdout()),
+    };
 
-//     loop {
-//         let bytes = file.read_line(&mut current_line)?;
-//         if bytes == 0 {
-//             break;
-//         }
+    loop {
+        let bytes = file.read_line(&mut current_line)?;
+        if bytes == 0 {
+            break;
+        }
 
-//         if to_print_line.trim() != current_line.trim() {
-//             if count > 0 {
-//                 if config.count {
-//                     write!(buffer, "{:4} {}", count, to_print_line)?;
-//                 } else {
-//                     buffer.write(to_print_line.as_bytes())?;
-//                 }
-//             }
+        if to_print_line.trim() != current_line.trim() {
+            if count > 0 {
+                if config.count {
+                    write!(buffer, "{:4} {}", count, to_print_line)?;
+                } else {
+                    buffer.write(to_print_line.as_bytes())?;
+                }
+            }
 
-//             to_print_line = current_line.clone();
-//             count = 0;
-//         }
+            to_print_line = current_line.clone();
+            count = 0;
+        }
 
-//         count += 1;
-//         current_line.clear();
-//     }
+        count += 1;
+        current_line.clear();
+    }
 
-//     // println!("Out of loop");
-//     if count > 0 {
-//         // last line
-//         if config.count {
-//             write!(buffer, "{:4} {}", count, to_print_line)?;
-//         } else {
-//             buffer.write(to_print_line.as_bytes())?;
-//         }
-//     }
+    // println!("Out of loop");
+    if count > 0 {
+        // last line
+        if config.count {
+            write!(buffer, "{:4} {}", count, to_print_line)?;
+        } else {
+            buffer.write(to_print_line.as_bytes())?;
+        }
+    }
 
-//     Ok(())
-// }
+    Ok(())
+}

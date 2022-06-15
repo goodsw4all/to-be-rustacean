@@ -65,6 +65,7 @@ pub fn get_args() -> MyResult<Config> {
         .author("MW")
         .about("Rust wc")
         .arg(
+            // postional argument
             Arg::new("files")
                 .value_name("FILES")
                 .default_value("-")
@@ -122,11 +123,9 @@ pub fn get_args() -> MyResult<Config> {
         bytes,
         chars,
     })
-    // Err("".into())
 }
 
 pub fn run(config: Config) -> MyResult<()> {
-    // println!("Config {config:#?}");
     let mut total = (0, 0, 0, 0);
 
     for filename in &config.files {
@@ -169,7 +168,7 @@ pub fn run(config: Config) -> MyResult<()> {
                         output_num_chars,
                     ]
                     .iter()
-                    .for_each(|data| output += data);
+                    .for_each(|result| output += result);
 
                     if filename == "-" {
                         println!("{}", output);
@@ -180,6 +179,7 @@ pub fn run(config: Config) -> MyResult<()> {
             }
         }
     }
+    
     if config.files.len() > 1 {
         let total_num_lines = if config.lines {
             format!("{:>8}", total.0)
