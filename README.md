@@ -31,20 +31,14 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 ### Good reasons for C Programmers
 
 - one-stop package & build system
-
 - test built-in support
-
 - memory safe coding
-
 - compiler driven development
-
 - dev community
-
 - documentations
-
 - modern programming concepts
-
 - wide range from embedded to web
+- easy TDD
 
 ### Challenges
 
