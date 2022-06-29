@@ -18,12 +18,13 @@ pub fn get_args() -> MyResult<Config> {
         .author("MW")
         .about("rust cat")
         .arg(
-            Arg::new("files")
+            Arg::new("files") // postitional argument
                 .value_name("FILE")
                 .help("Input files")
+                // The argument's values can be invalid UTF-8 and should not be treated as an error.
                 .allow_invalid_utf8(true)
                 .multiple_values(true)
-                .default_value("-"),
+                .default_value("-"), // goes to stdin
         )
         .arg(
             Arg::new("number_lines")
@@ -43,6 +44,7 @@ pub fn get_args() -> MyResult<Config> {
 
     Ok(Config {
         // files: matches.values_of_lossy("files").unwrap_or(vec![]),
+        // Get the lossy values of a specific option or positional argument.
         files: matches.values_of_lossy("files").unwrap(),
         number_lines: matches.is_present("number_lines"),
         number_nonblank_lines: matches.is_present("number_nonblank_lines"),
