@@ -2,12 +2,12 @@ use assert_cmd::Command;
 use predicates::prelude::*;
 use std::fs;
 
-type TestResult = Result<(), Box<dyn std::error::Error>>;
+type TestResult = Result<(), Box<dyn std::error::Error>>; // dyn is a prefix of a trait object's type.
 
 // --------------------------------------------------
 #[test]
 fn dies_no_args() -> TestResult {
-    Command::cargo_bin("echor")?
+    Command::cargo_bin("echor")? // Result Handling
         .assert()
         .failure()
         .stderr(predicate::str::contains("USAGE"));

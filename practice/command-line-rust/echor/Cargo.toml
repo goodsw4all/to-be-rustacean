@@ -9,5 +9,7 @@ edition = "2021"
 clap = "3.1.15"
 
 [dev-dependencies]
+# Easy command initialization and assertions.
 assert_cmd = "2"
+# Composable first-order predicate functions.
 predicates = "2"
