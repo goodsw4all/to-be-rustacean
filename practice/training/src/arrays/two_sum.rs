@@ -14,7 +14,7 @@ use std::collections::HashMap;
 // Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
 // O(N^2) O(1)
-pub fn two_sum_brute_force(nums: Vec<i32>, target: i32) -> Vec<i32> {
+pub fn two_sum_bruteforce(nums: Vec<i32>, target: i32) -> Vec<i32> {
     for idx in 0..nums.len() {
         let start_idx = idx + 1;
         let adding_num_idx = nums[start_idx..]
@@ -28,7 +28,7 @@ pub fn two_sum_brute_force(nums: Vec<i32>, target: i32) -> Vec<i32> {
     vec![]
 }
 
-// O(N)
+// O(N) 2N
 pub fn two_sum_hashmap(nums: Vec<i32>, target: i32) -> Vec<i32> {
     let mut map: HashMap<i32, usize> = HashMap::new();
     for idx in 0..nums.len() {
@@ -45,6 +45,7 @@ pub fn two_sum_hashmap(nums: Vec<i32>, target: i32) -> Vec<i32> {
     vec![]
 }
 
+// O(N) N
 pub fn two_sum_hashmap2(nums: Vec<i32>, target: i32) -> Vec<i32> {
     // k: adding num, v: idx
     let mut map: HashMap<i32, usize> = HashMap::new();
@@ -61,7 +62,7 @@ pub fn two_sum_hashmap2(nums: Vec<i32>, target: i32) -> Vec<i32> {
 }
 
 pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
-    // two_sum_brute_force(nums, target)
+    // two_sum_bruteforce(nums, target)
     // two_sum_hashmap(nums, target)
     two_sum_hashmap2(nums, target)
 }
