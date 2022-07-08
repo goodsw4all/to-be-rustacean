@@ -14,7 +14,7 @@ fn reverse_string_rusty(s: String) -> String {
 }
 
 fn reverse_string(s: String) -> String {
-    reverse_string_array(s)
+    reverse_string_array(s) 
     // reverse_string_rusty(s)
 }
 
