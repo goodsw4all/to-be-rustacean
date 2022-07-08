@@ -17,16 +17,14 @@
 > <img src="https://foundation.rust-lang.org/img/rust-logo-blk.svg" width="50" height="50"/>
 > <img src="https://rustacean.net/assets/cuddlyferris.svg" width="50" height="50"/>
 
-어느날 문득 고인물 개발자가 되었다는 것을 깨닫게 되고, 일하며 살아왔던 시간들을 회고해 보니     
-꽤 오랜 동안 나름 고군분투 했지만, 내가 원하는 수준의 개발자가 된 것은 아니었다.  
-embedded system 에서는 system building 과 firmware coding 이 5:5 정도 였던 것 같다.  
-앞으로는 소프트웨어 개발에 몰입하고 싶다. 
- 
-unlearn 하고 learn 하는 과정이 쉽지 않겠지만, 실패하더라도 시도해 보는 수 밖에 없다.   
+지금껏, 일하며 살아왔던 시간들을 회고해 보니 꽤 오랜 동안 나름 고군분투 했지만, 내가 원하는 수준의 개발자가 된 것은 아니었다.  
+내가 경험했던 embedded system 에서는 system building(bring-up) 과 software 개발 이 5:5 정도 였던 것 같다.  
+Embedded System Building은 꽤 익숙한 수준에 이르렀으나 Software 개발은 만족할 수준이 아니다.  
+내가 잘 하고 싶었던 것은 소프트웨어 개발 그 자체 였던 것 같고, 앞으로는 소프트웨어 개발에 몰입하고 싶다. 
 
 이왕 손에 익은 것만 붙잡고 있을 것이 아니므로, 사용해본적이 없는 새로운 언어를 사용하고 싶었다.  
 C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있는데, *Rust*가 그 Solution 인 듯하다   
-익숙했던 device들과 씨름하는 개발을 넘어, 넓고 넓은 바깥 세계의 개발로 나가는 여정이라 험난 할 듯하다.  
+익숙한 것에서 벗어나는 것이 다소 두렵지만, 시도해보는 것이 후회없을 것 같다.  
  
 ### Good reasons for C Programmers
 
@@ -43,24 +41,15 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 ### Challenges
 
 - Ownership
-
 - reference
-
 - trait
-
 - enum
-
 - match
-
 - Option / Result handling
-
 - lifetime specifier
-
 - functional programming
-
 - smart pointer  
   Interior mutability
-
 - closure
 
 ## Learning
@@ -79,6 +68,10 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 ### Step 2 : Coding Practice
 muscle memory building(acturally it doensnt have memory though)  
 어느 정도 코딩할 수 있을 정도 지식이 생기면, 코딩 하면서 부족한 부분을 명확히 인지하게 되고 그 부분을 관련 자료 찾아 공부
+
+- [ ] Coding Quiz(Leetcode 류의 문제) : 연습량 늘리기
+  [/practice/training/](/practice/training/src)
+  
 
 - [X] Rustlings : 조금 쉬운 편 (22.05.20)
 [https://github.com/rust-lang/rustlings](https://github.com/rust-lang/rustlings)
