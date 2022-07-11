@@ -47,6 +47,10 @@ def get_items_in_playlist(playlistId, df: pd.DataFrame = None):
             index = title.find(':')
             title = title[0:4] + title[index+1:].strip()
 
+            title = title.replace("EasyEasy Rust Korean", '').strip()
+            # print(title)
+            # break
+
             global playlist_description
             global desc_done
             if idx == 0 and desc_done == False:
@@ -76,6 +80,10 @@ def get_items_in_playlist(playlistId, df: pd.DataFrame = None):
                 'published_at': publishedAt,
             }
             df = df.append(row, ignore_index=True)
+            # df.sort_values()
+            df.sort_values(by=['video_title'], inplace=True)
+            # df = pd.concat([df, pd.DataFrame(row)])
+            # df = df.add(row)
 
         # for debugging
         #     if idx == 5:
@@ -129,7 +137,8 @@ def convert_seconds_to_hms(total_seconds):
 
 def set_cell_data(playlist_title, playlist_description, playlist_url, playlist_duration, playlist_df):
     print(playlist_description)
-    writer = pd.ExcelWriter('TOC - Easy Rust in Korean.xlsx')
+    writer = pd.ExcelWriter(
+        'TOC - Easy Rust in Korean.xlsx', engine='xlsxwriter')
     playlist_df.to_excel(writer, sheet_name="Easy Rust in Korean",
                          index=False, startrow=2, startcol=0)
     sheet = writer.sheets["Easy Rust in Korean"]
