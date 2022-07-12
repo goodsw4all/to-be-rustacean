@@ -34,7 +34,7 @@ def get_items_in_playlist(playlistId, df: pd.DataFrame = None):
         response = playlist_req.execute()
         global playlist_video_count
         playlist_video_count = response['pageInfo']['totalResults']
-        # print(response)
+
         for (idx, item) in enumerate(response['items']):
             title = item['snippet']['title']
 
@@ -48,8 +48,11 @@ def get_items_in_playlist(playlistId, df: pd.DataFrame = None):
             title = title[0:4] + title[index+1:].strip()
 
             title = title.replace("EasyEasy Rust Korean", '').strip()
-            # print(title)
-            # break
+
+            try:
+                int(title[0:3])
+            except ValueError:
+                continue
 
             global playlist_description
             global desc_done
@@ -80,15 +83,8 @@ def get_items_in_playlist(playlistId, df: pd.DataFrame = None):
                 'published_at': publishedAt,
             }
             df = df.append(row, ignore_index=True)
-            # df.sort_values()
             df.sort_values(by=['video_title'], inplace=True)
             # df = pd.concat([df, pd.DataFrame(row)])
-            # df = df.add(row)
-
-        # for debugging
-        #     if idx == 5:
-        #         break
-        # break
 
         nextPageToken = response.get('nextPageToken')
         if not nextPageToken:
