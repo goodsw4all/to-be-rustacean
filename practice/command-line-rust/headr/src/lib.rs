@@ -45,35 +45,18 @@ pub fn get_args() -> MyResult<Config> {
         )
         .get_matches();
 
-    // let lines = if let Some(lines) = matches.value_of("lines") {
-    //     match lines.parse::<usize>() {
-    //         Ok(num) => num,
-    //         Err(_) => {
-    //             eprintln!("illegal line count -- {}", lines);
-    //             std::process::exit(1);
-    //         }
-    //     }
-    // } else {
-    //     10
-    // };
-
     let lines = matches
         .value_of("lines")
+        // map for option instead of match
+        // Maps an Option<T> to Option<U> by applying a function to a contained value.
+        // Option has a built in method called map(),
+        // a combinator for the simple mapping of Some -> Some
+        // and None -> None. Multiple map() calls can be chained together for even more flexibility.
         .map(parse_positive_int)
+        // Transposes an Option of a Result into a Result of an Option.
         .transpose()
         .map_err(|e| format!("illegal line count -- {}", e))?;
 
-    // let bytes = if let Some(bytes) = matches.value_of("bytes") {
-    //     match bytes.parse::<usize>() {
-    //         Ok(num) => Some(num),
-    //         Err(_) => {
-    //             eprintln!("illegal byte count -- {}", bytes);
-    //             std::process::exit(1);
-    //         }
-    //     }
-    // } else {
-    //     None
-    // };
     let bytes = matches
         .value_of("bytes")
         .map(parse_positive_int)
@@ -85,6 +68,14 @@ pub fn get_args() -> MyResult<Config> {
         lines: lines.unwrap(),
         bytes,
     })
+}
+
+fn parse_positive_int(val: &str) -> MyResult<usize> {
+    match val.parse::<usize>() {
+        Ok(n) if n > 0 => Ok(n),
+        // _ => Err(Box::from(val)),
+        _ => Err(From::from(val)),
+    }
 }
 
 fn open(filename: &str) -> MyResult<Box<dyn BufRead>> {
@@ -128,14 +119,6 @@ pub fn run(config: Config) -> MyResult<()> {
         }
     }
     Ok(())
-}
-
-fn parse_positive_int(val: &str) -> MyResult<usize> {
-    match val.parse::<usize>() {
-        Ok(n) if n > 0 => Ok(n),
-        // _ => Err(Box::from(val)),
-        _ => Err(From::from(val)),
-    }
 }
 
 #[test]
