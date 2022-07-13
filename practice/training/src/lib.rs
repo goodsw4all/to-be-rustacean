@@ -1,6 +1,8 @@
 #![allow(dead_code)]
 
 pub mod arrays;
+pub mod idiomatic;
+pub mod linked_list;
 
 // Not used below
 fn learning_by_doing() {
