@@ -134,7 +134,7 @@ def convert_seconds_to_hms(total_seconds):
 def set_cell_data(playlist_title, playlist_description, playlist_url, playlist_duration, playlist_df):
     print(playlist_description)
     writer = pd.ExcelWriter(
-        'TOC - Easy Rust in Korean.xlsx', engine='xlsxwriter')
+        'EasyRust_in_Korean.xlsx', engine='xlsxwriter')
     playlist_df.to_excel(writer, sheet_name="Easy Rust in Korean",
                          index=False, startrow=2, startcol=0)
     sheet = writer.sheets["Easy Rust in Korean"]
@@ -157,7 +157,7 @@ def set_cell_data(playlist_title, playlist_description, playlist_url, playlist_d
     pl_cell_header_format = writer.book.add_format({'border': 1})
     pl_cell_header_format.set_bold()
 
-    sheet.set_column('A:A', 30, title_format)
+    sheet.set_column('A:A', 60, title_format)
     sheet.set_column('B:B', 60, title_format)
     sheet.set_column('C:C', 25, cell_format)
     sheet.set_column('D:D', 70, wrap_format)
@@ -177,7 +177,7 @@ def set_cell_data(playlist_title, playlist_description, playlist_url, playlist_d
 
 
 def set_font_all_cells():
-    wb = openpyxl.load_workbook('TOC - Easy Rust in Korean.xlsx')
+    wb = openpyxl.load_workbook('EasyRust_in_Korean.xlsx')
     ws = wb["Easy Rust in Korean"]
 
     for row in ws.iter_cols(min_row=1, min_col=1, max_col=4):
@@ -188,7 +188,7 @@ def set_font_all_cells():
             # cell.alignment = Alignment(
             #     horizontal='center', vertical='center', wrap_text=True)
 
-    wb.save(filename='TOC - Easy Rust in Korean.xlsx')
+    wb.save(filename='EasyRust_in_Korean.xlsx')
 
 
 cols = ['video_title', 'video_url', 'duration', 'published_at']
