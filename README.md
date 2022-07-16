@@ -63,7 +63,7 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 한국말을 그냥 잘 하는 수준이 아니기 때문에, 외국인이지만 한국어로 강의하는 것이 전혀 문제 없다.  
 [Easy Rust Korean / 한국어판 강의](https://www.youtube.com/playlist?list=PLfllocyHVgsSJf1zO6k6o3SX2mbZjAqYE)  
 [Easy Rust Book](https://dhghomon.github.io/easy_rust/)  
-  강의 목차 [TOC of Easy Rust](/toc_easyrust_playlist)
+  정렬된 강의 비디오 리스트 [TOC of Easy Rust](/toc_easyrust_playlist)
 
 ### Step 2 : Coding Practice
 muscle memory building(acturally it doensnt have memory though)  
