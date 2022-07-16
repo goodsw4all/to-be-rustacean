@@ -1,5 +1,3 @@
-use std::collections::HashMap;
-
 #[macro_export]
 macro_rules! hashmap {
     () => {
@@ -28,7 +26,7 @@ macro_rules! hashmap {
 
 #[test]
 fn test_macro_hashmap() {
-    let mut expected = HashMap::new();
+    let mut expected = ::std::collections::HashMap::new();
     expected.insert(1, "one");
     expected.insert(2, "two");
     assert_eq!(hashmap!(1 => "one", 2 => "two"), expected);
