@@ -1,8 +1,8 @@
 #![allow(dead_code)]
 
 pub mod arrays;
-pub mod rusty;
 pub mod linked_list;
+pub mod rusty;
 
 // Not used below
 fn learning_by_doing() {

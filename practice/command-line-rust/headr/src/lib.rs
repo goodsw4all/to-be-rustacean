@@ -18,7 +18,7 @@ pub fn get_args() -> MyResult<Config> {
         .author("MW")
         .version("0.1.0")
         .about("Rust head")
-        .arg(
+        .arg( 
             Arg::new("files")
                 .help("Input files")
                 .value_name("FILES")
