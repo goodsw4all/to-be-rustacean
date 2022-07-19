@@ -1,7 +1,4 @@
-// pub struct Node<T> {
-//     pub value: T,
-//     pub next: Option<Box<Node<T>>>,
-// }
+type Link = Option<Box<Node>>;
 
 struct Node {
     element: i32,
@@ -13,8 +10,6 @@ impl Node {
         Self { element, next }
     }
 }
-
-type Link = Option<Box<Node>>;
 
 struct LinkedList {
     head: Link,
@@ -55,10 +50,48 @@ impl LinkedList {
             None => None,
         }
     }
+
+    fn push_back(&mut self, element: i32) {
+        let mut last_node = self.head.as_mut();
+
+        loop {
+            last_node = match last_node {
+                Some(n) => {
+                    if n.next.is_none() {
+                        n.next = Some(Box::new(Node::new(element, None)));
+                        break;
+                    }
+                    n.next.as_mut()
+                }
+                None => None,
+            };
+        }
+    }
+
+    fn traverse(&mut self) {
+        let mut temp = &self.head;
+
+        loop {
+            match temp {
+                Some(n) => {
+                    print!("{:>3}", n.element);
+                    temp = &n.next;
+
+                    if temp.is_some() {
+                        print!(" -> ");
+                    }
+                }
+                None => {
+                    println!(" -> None");
+                    break;
+                }
+            }
+        }
+    }
 }
 
 #[test]
-fn test_linked_list() {
+fn test_linked_list_i32() {
     let expected = vec![1, 2, 3, 4, 5];
     let mut actual = vec![];
     let mut linked_list = LinkedList::new();
@@ -66,6 +99,10 @@ fn test_linked_list() {
     for i in expected.iter() {
         linked_list.push_front(*i);
     }
+
+    linked_list.traverse();
+    linked_list.push_back(777);
+    linked_list.traverse();
 
     println!("Peeking front {:?}", linked_list.peek_front());
     for _ in 0..linked_list.len() {
