@@ -1,22 +1,24 @@
-type Link = Option<Box<Node>>;
+use std::fmt::Display;
 
-struct Node {
-    element: i32,
-    next: Link,
+type Link<T> = Option<Box<Node<T>>>;
+
+struct Node<T: Display> {
+    element: T,
+    next: Link<T>,
 }
 
-impl Node {
-    fn new(element: i32, next: Link) -> Self {
+impl<T: Display> Node<T> {
+    fn new(element: T, next: Link<T>) -> Self {
         Self { element, next }
     }
 }
 
-struct LinkedList {
-    head: Link,
+struct LinkedList<T: Display> {
+    head: Link<T>,
     len: usize,
 }
 
-impl LinkedList {
+impl<T: Display> LinkedList<T> {
     fn new() -> Self {
         Self { head: None, len: 0 }
     }
@@ -25,7 +27,7 @@ impl LinkedList {
         self.len
     }
 
-    fn push_front(&mut self, element: i32) {
+    fn push_front(&mut self, element: T) {
         let old_head = self.head.take();
 
         let new_head = Some(Box::new(Node::new(element, old_head)));
@@ -33,7 +35,30 @@ impl LinkedList {
         self.len += 1;
     }
 
-    fn pop_back(&mut self) -> Option<i32> {
+    fn push_back(&mut self, element: T) {
+        let mut temp = &self.head;
+
+        loop {
+            match temp {
+                Some(n) => {
+                    print!("{:>3}", &n.element);
+                    temp = &n.next;
+                    if temp.is_some() {
+                        print!(" -> ");
+                    } else {
+                    }
+                }
+                None => {
+                    println!("");
+                    break;
+                }
+            }
+        }
+
+        self.len += 1;
+    }
+
+    fn pop_back(&mut self) -> Option<T> {
         let old_head = self.head.take();
 
         old_head.map(|n| {
@@ -43,7 +68,7 @@ impl LinkedList {
         })
     }
 
-    fn peek_front(&mut self) -> Option<&i32> {
+    fn peek_front(&self) -> Option<&T> {
         // self.head.as_ref().map(|n| &n.element)
         match &self.head {
             Some(n) => Some(&n.element),
@@ -51,38 +76,21 @@ impl LinkedList {
         }
     }
 
-    fn push_back(&mut self, element: i32) {
-        let mut last_node = self.head.as_mut();
-
-        loop {
-            last_node = match last_node {
-                Some(n) => {
-                    if n.next.is_none() {
-                        n.next = Some(Box::new(Node::new(element, None)));
-                        break;
-                    }
-                    n.next.as_mut()
-                }
-                None => None,
-            };
-        }
-    }
-
-    fn traverse(&mut self) {
+    fn traverse(&self) {
         let mut temp = &self.head;
 
         loop {
             match temp {
                 Some(n) => {
-                    print!("{:>3}", n.element);
+                    print!("{:>3}", &n.element);
                     temp = &n.next;
-
+                    
                     if temp.is_some() {
                         print!(" -> ");
                     }
                 }
                 None => {
-                    println!(" -> None");
+                    println!("");
                     break;
                 }
             }
@@ -91,7 +99,7 @@ impl LinkedList {
 }
 
 #[test]
-fn test_linked_list_i32() {
+fn test_linked_list_generic() {
     let expected = vec![1, 2, 3, 4, 5];
     let mut actual = vec![];
     let mut linked_list = LinkedList::new();
@@ -101,15 +109,15 @@ fn test_linked_list_i32() {
     }
 
     linked_list.traverse();
-    linked_list.push_back(777);
-    linked_list.traverse();
 
     println!("Peeking front {:?}", linked_list.peek_front());
     for _ in 0..linked_list.len() {
         if let Some(n) = linked_list.pop_back() {
+            println!("Popping back {:?}", n);
             actual.insert(0, n);
         }
     }
+
     println!("Peeking front {:?}", linked_list.peek_front());
 
     assert_eq!(actual, expected)

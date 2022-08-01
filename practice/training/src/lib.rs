@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
-pub mod arrays;
-pub mod linked_list;
+pub mod algorithms;
+pub mod data_structures;
 pub mod rusty;
 
 // Not used below
