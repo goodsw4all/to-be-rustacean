@@ -109,11 +109,10 @@ useful, big idea, start small
 만들자 무언가 (생각나는 대로 적어 보고, 점차 구체화 할 것)
 - Linux Kernel Module
    - C -> Rust
-- CLI app
+- Quant Stock Trading
    - Stock Trading SDK + Trader App (한국투자증권 KIS API)  
      https://github.com/goodsw4all/KIS_OpenAPI_in_Rust
-- solana Dapp
-- WASM
+- Bevy Engine App
 - 공공 Data API 를 활용해서 sth?
 
 ## My own q/a
