@@ -28,6 +28,19 @@ impl Default for MyApp {
 
 impl eframe::App for MyApp {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
+        egui::TopBottomPanel::top("my_panel").show(ctx, |ui| {
+            ui.label("Top World!");
+        });
+        egui::SidePanel::left("my_left_panel").show(ctx, |ui| {
+            ui.label("Side World!");
+            ui.horizontal(|ui| {
+                ui.label("Your name: ");
+                ui.vertical(|ui| {
+                    ui.label("Your name: ");
+                    ui.text_edit_singleline(&mut self.name);
+                });
+            });
+        });
         egui::CentralPanel::default().show(ctx, |ui| {
             ui.heading("My egui Application");
             ui.horizontal(|ui| {
