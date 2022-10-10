@@ -54,10 +54,12 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 
 ## Learning
 ### Step 1 : Rust fundamental (syntax & idioms)
-- [x] The book 한글 번역 버젼  (https://rinthel.github.io/rust-lang-book-ko/)  
-  - [x] 읽기 : 챕터별로 가독성이 많이 다르다. 이 책 자체가 초심자를 위한 책은 아니고 어려움 (22.05.19)   
-  - [x] Cheat sheet
-        https://github.com/donbright/rust-lang-cheat-sheet         
+- [ ] The book
+  - [x] The book 한글 번역 버젼  (https://rinthel.github.io/rust-lang-book-ko/)  
+    - [x] 읽기 : 챕터별로 가독성이 많이 다르다. 이 책 자체가 초심자를 위한 책은 아니고 어려움 (22.05.19)   
+  - [ ] The book 한글판 : [러스트 프로그래밍 공식 가이드](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=216867525)
+    
+  
         
 - [x] Easy Rust : Rust를 배웁시다. (Kor/Eng) by David MacLeod  
 한국말을 그냥 잘 하는 수준이 아니기 때문에, 외국인이지만 한국어로 강의하는 것이 전혀 문제 없다.  
@@ -67,11 +69,7 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 
 ### Step 2 : Coding Practice
 muscle memory building(acturally it doensnt have memory though)  
-어느 정도 코딩할 수 있을 정도 지식이 생기면, 코딩 하면서 부족한 부분을 명확히 인지하게 되고 그 부분을 관련 자료 찾아 공부
-
-- [ ] Coding Quiz(Leetcode 류의 문제) : 연습량 늘리기
-  [/practice/training/](/practice/training/src)
-  
+어느 정도 코딩할 수 있을 정도 지식이 생기면, 코딩 하면서 부족한 부분을 명확히 인지하게 되고 그 부분을 관련 자료 찾아 공부  
 
 - [X] Rustlings : 조금 쉬운 편 (22.05.20)
 [https://github.com/rust-lang/rustlings](https://github.com/rust-lang/rustlings)
@@ -84,6 +82,9 @@ Web에서 문제를 풀어볼 수 있지만, WORK LOCALLY 방식으로 IDE의 �
 Test Case를 통해 힌트를 얻고 test 작성법을 배울 수 있다.
 
   ![Exercsim Status](images/exercism.png)
+
+- [ ] Coding Quiz(Leetcode 류의 문제) : 연습량 늘리기
+  [/practice/training/](/practice/training/src)  
 
 ### Step 3 : Rust books written in English
    원서를 end to end로 읽으면서 공부하는 것이 시간과 노력이 더 들겠지만, 우리말 자료가 별로 없기 때문에 선택의 여지가 없다.  
@@ -108,11 +109,12 @@ Test Case를 통해 힌트를 얻고 test 작성법을 배울 수 있다.
 useful, big idea, start small
 만들자 무언가 (생각나는 대로 적어 보고, 점차 구체화 할 것)
 - Linux Kernel Module
-   - C -> Rust
+  - C -> Rust
 - Quant Stock Trading
-   - Stock Trading SDK + Trader App (한국투자증권 KIS API)  
+  - Stock Trading SDK + Trader App (한국투자증권 KIS API)  
      https://github.com/goodsw4all/KIS_OpenAPI_in_Rust
-- Bevy Engine App
+- Bevy Engine App 
+  - Metronome 
 - 공공 Data API 를 활용해서 sth?
 
 ## My own q/a
