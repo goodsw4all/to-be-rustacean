@@ -55,6 +55,8 @@ impl LinkedList {
                 None => None,
             };
         }
+
+        self.len += 1;
     }
 
     fn pop_back(&mut self) -> Option<i32> {

@@ -36,26 +36,27 @@ impl<T: Display> LinkedList<T> {
     }
 
     fn push_back(&mut self, element: T) {
-        let mut temp = &self.head;
-
-        loop {
-            match temp {
-                Some(n) => {
-                    print!("{:>3}", &n.element);
-                    temp = &n.next;
-                    if temp.is_some() {
-                        print!(" -> ");
-                    } else {
-                    }
-                }
-                None => {
-                    println!("");
-                    break;
-                }
-            }
+        if self.head.is_none() {
+            self.head = Some(Box::new(Node::new(element, None)));
+            return;
         }
 
-        self.len += 1;
+        let mut last_node = self.head.as_mut();
+
+        loop {
+            last_node = match last_node {
+                Some(node) => {
+                    // If tail node
+                    if node.next.is_none() {
+                        node.next = Some(Box::new(Node::new(element, None)));
+                        self.len += 1;
+                        break;
+                    }
+                    node.next.as_mut()
+                }
+                None => None,
+            };
+        }
     }
 
     fn pop_back(&mut self) -> Option<T> {
@@ -84,13 +85,13 @@ impl<T: Display> LinkedList<T> {
                 Some(n) => {
                     print!("{:>3}", &n.element);
                     temp = &n.next;
-                    
+
                     if temp.is_some() {
                         print!(" -> ");
                     }
                 }
                 None => {
-                    println!("");
+                    println!();
                     break;
                 }
             }
