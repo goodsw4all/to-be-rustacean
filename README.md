@@ -38,10 +38,11 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 - wide range from embedded to web
 - easy TDD
 
-### Challenges
+### Concepts
 
 - Ownership
 - reference
+- borrow check
 - trait
 - enum
 - match
