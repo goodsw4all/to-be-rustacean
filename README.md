@@ -24,18 +24,24 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
 ### Good reasons for C Programmers
 
 - one-stop package & build system
-- test built-in support
+- test built-in support, easy TDD
 - memory safe coding
 - compiler driven development
 - dev community
 - documentations
 - modern programming concepts
 - wide range from embedded to web
-- easy TDD
 
 ### Basic concepts
-
-- Ownership
+- statements and expressions
+  - statements
+    - serve mostly to contain and explicitly sequence expression evaluation : does not return, followed by `;`
+      - declaration statements
+      - expression statements
+  - expressions
+    - it always produces a value, and it may have effects : returns a value
+    - evaluates to a value, and has effects during evaluation    
+- ownership
   -  the main purpose of ownership is to manage heap data 
   -  rules
     - Each value in Rust has an owner.
@@ -51,7 +57,11 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
   - borrow checker
     - compares scopes to determine whether all borrows are valid
 - enum
-- match
+  - give you a way of saying a value is one of a possible set of values
+  - can have associated values
+- pattern matching
+  - patterns : Literals, Destructured arrays, enums, structs, or tuples, variables, wildcards, placeholders
+  - matching : compare it to some value. If the pattern matches, use the value parts in our code
 - generics
   - abstract stand-ins for concrete types or other properties
     - concrete type (i32, f32, String ...)
@@ -63,13 +73,32 @@ C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있
   - monomorphization
     - turning generic code into specific code by filling in the concrete types that are used when compiled
 - trait
-- lifetime specifier
+  - defines functionality a particular type has and can share with other types (shared behavier, like interface)
+- lifetime
+  - another kind of generic
+  - ensure that references are valid as long as we need them to be
 - functional programming
-- closure
-- deref coercion
-- smart pointer  
-- Interior mutability
-  - a mutable borrow to an immutable value
+  - style
+    - using functions as values by passing them in arguments,   
+      returning them from other functions, assigning them to variables for later execution
+  - closure
+    - a function-like construct you can store in a variable  
+  - iterator
+    - a way of processing a series of elements
+- smart pointers
+  - pointer
+    - general concept for a variable that contains an address in memory
+  - smart pointer
+    - data structures that act like a pointer but also have additional metadata and capabilities
+  - deref coercion
+    - converts a reference to a type that implements the Deref trait into a reference to another type
+  - Interior mutability
+    - a mutable borrow to an immutable value
+  - common smart pointers
+    - Box<T> for allocating values on the heap
+    - Rc<T>, a reference counting type that enables multiple ownership
+    - Ref<T>, RefMut<T>, accessed through RefCell<T>,    
+      a type that enforces the borrowing rules at runtime instead of `compile time`
 
 ## Learning
 ### Step 1 : Rust fundamental (syntax & idioms)
