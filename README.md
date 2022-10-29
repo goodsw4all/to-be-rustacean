@@ -1,16 +1,4 @@
 # Learning Rust as a embedded C programmer  
-  - [Intro](#intro)
-    - [Good reasons for C Programmers](#good-reasons-for-c-programmers)
-    - [Challenges](#challenges)
-  - [Learning](#learning)
-    - [Step 1 : Rust fundamental (syntax & idioms)](#step-1--rust-fundamental-syntax--idioms)
-    - [Step 2 : Coding Practice](#step-2--coding-practice)
-    - [Step 3 : Rust books written in English](#step-3--rust-books-written-in-english)
-      - [Step 3-1 : Command-Line Rust](#step-3-1--command-line-rust)
-      - [Step 3-2 : Zero 2 Production in RUST](#step-3-2--zero-2-production-in-rust)
-    - [Step 4 : Learning by doing some projects](#step-4--learning-by-doing-some-projects)
-  - [My own q/a](#my-own-qa)
-  - [References](#references)
 ## Intro
 > My journey to be a Rustacean 🦀    
 > <img src="https://rustacean.net/assets/rustacean-flat-happy.svg" width="50" height="50"/>
@@ -18,7 +6,7 @@
 > <img src="https://rustacean.net/assets/cuddlyferris.svg" width="50" height="50"/>
 
 개발자로 꽤 오래 일했지만, 이상하게도 코딩하는 시간보다 다른 업무가 더 많았다.  
-개발자 본연의 자세로 돌아가 가치 있는 소프트웨어를 만들고 싶었고, 사용해본 적이 없는 새로운 언어를 사용하고 싶었다.  
+누군가에는 가치 있는 소프트웨어를 만들고 싶고, 사용해본 적이 없는 새로운 언어로 새로운 여정을 가길 원한다.    
 C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있는데, *Rust*가 그 Solution 인 듯하다.     
  
 ### Good reasons for C Programmers
@@ -131,9 +119,9 @@ Test Case를 통해 힌트를 얻고 test 작성법을 배울 수 있다.
 - [ ] Coding Quiz(Leetcode 류의 문제) : 연습량 늘리기
   [/practice/training/](/practice/training/src)  
 
-### Step 3 : Rust books
+### Step 3 : Rust intermediate
 
-#### Step 3-1 : Zero 2 Production in RUST
+#### Zero 2 Production in RUST
 - [ ] [Auth Web Microservice with rust using Actix-Web 4.0](https://gill.net.in/posts/auth-microservice-rust-actix-web1.0-diesel-complete-tutorial/)
 - [ ] [Book : Zero To Production](https://www.zero2prod.com/index.html?country=Korea&discount_code=SEA60)  
 * Actix 로 Back-end 만드는 과정, 최근에 Update 되었고, 책을 쓴 이유 중 하나가 새로 오는 팀원들을 위해 썼다고 한다.
@@ -161,5 +149,8 @@ useful, big idea, start small
 ## My own q/a
 
 ## References
-
+### syntax
+- Iterator   
+  https://www.newline.co/@uint/rust-iterators-a-guide
+- Smart pointers
 ![Untitled](images/Untitled%206.png)
