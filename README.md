@@ -5,9 +5,6 @@
 > <img src="https://foundation.rust-lang.org/img/rust-logo-blk.svg" width="50" height="50"/>
 > <img src="https://rustacean.net/assets/cuddlyferris.svg" width="50" height="50"/>
 
-C 처럼 빠르고, 메모리 에러가 없는 언어에 현대적인 프로그래밍 개념들이 들어 있는 언어가 *Rust* 이다.    
-*Rust* 를 잘 사용할 수 있는 수준까지 공부하는 것이 목표이다. 
- 
 ### Good reasons for C Programmers
 - one-stop package & build system
 - test built-in support, easy TDD
