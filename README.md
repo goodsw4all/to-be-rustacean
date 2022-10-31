@@ -1,16 +1,14 @@
 # Learning Rust as a embedded C programmer  
 ## Intro
-> My journey to be a Rustacean 🦀    
+> C 에서 Rust 로 main 언어로 사용하기 위한 여정: My journey to be a Rustacean 🦀    
 > <img src="https://rustacean.net/assets/rustacean-flat-happy.svg" width="50" height="50"/>
 > <img src="https://foundation.rust-lang.org/img/rust-logo-blk.svg" width="50" height="50"/>
 > <img src="https://rustacean.net/assets/cuddlyferris.svg" width="50" height="50"/>
 
-개발자로 꽤 오래 일했지만, 이상하게도 코딩하는 시간보다 다른 업무가 더 많았다.  
-누군가에는 가치 있는 소프트웨어를 만들고 싶고, 사용해본 적이 없는 새로운 언어로 새로운 여정을 가길 원한다.    
-C 의 장점을 가지면서, 다양한 응용이 가능한 언어를 찾고 있는데, *Rust*가 그 Solution 인 듯하다.     
+C 처럼 빠르고, 메모리 에러가 없는 언어에 현대적인 프로그래밍 개념들이 들어 있는 언어가 *Rust* 이다.    
+*Rust* 를 잘 사용할 수 있는 수준까지 공부하는 것이 목표이다. 
  
 ### Good reasons for C Programmers
-
 - one-stop package & build system
 - test built-in support, easy TDD
 - memory safe coding
@@ -138,12 +136,14 @@ useful, big idea, start small
 - Quant Stock Trading
   - Stock Trading SDK + Trader App (한국투자증권 KIS API)  
      https://github.com/goodsw4all/KIS_OpenAPI_in_Rust
-- Bevy Engine App 
+- GUI App 
   - Metronome 
 - 공공 Data API 를 활용해서 sth?
 - Linux Kernel Module
 - 기존의 C(or any others)로 된 것을 rewrite
-- 번역
+- 번역  
+  - rust by example  
+    https://goodsw4all.github.io/rust-by-example-ko/index.html
 - 
 
 ## My own q/a
